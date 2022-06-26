@@ -1,0 +1,67 @@
+<html>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="/fontawesome/css/brands.css">
+  <table class="header">
+    <tr>
+      <th class="title" colspan="4" nowrap="nowrap"><a href="index.html" class="link">SERAPH YANG</a></th>
+      <th class="unfilled"></th>
+      <th class="unfilled"></th>
+      <th class="unfilled"></th>
+      <th class="unfilled"></th>
+      <th class="header"><a href="art.html" class="link">ART</a></th>
+      <th class="header"><a href="resume.html" class="link">RESUME</a></th>
+      <th class="header"><a href="#" class="link">BLOG</a></th>
+      <th class="header-contact"><a href="contact.html" class="link" style="color: #8eb1d9">CONTACT</a></th>
+    </tr>
+    <tr>
+      <td colspan="12"><hr></td>
+    </tr>   
+    <tr>
+      <td class="form-submit" colspan="12">
+        <form id="form-id" class="form-class" method="post" action="contact.php">
+            <label for="Name" class="label">Your name</label>
+            <div class="input-group">
+              <input type="text" id="Name" name="Name" class="form-control" required>
+            </div>
+          <div class="form-group">
+            <label for="Email" class="label">Your email</label>
+            <div class="input-group">
+              <input type="text" id="Email" name="Email" class="form-control" required>
+            </div>
+          </div>
+          <label for="contact-reason">Contact Reason</label>
+            <select id="contact reason" name="contact reason">
+              <option value="school">School/Job Related</option>
+              <option value="help">Help</option>
+              <option value="other">Other</option>
+            </select>
+          <div class="form-group">
+            <label for="Message" class="label">Your message</label>
+            <div class="input-group">
+              <textarea type="text" id="Message" name="Message" class="form-control" rows="12" max="3000" required></textarea>
+            </div>
+          </div>
+          <div class="container">
+            <button id="btn">
+                <p id="btnText">Submit</p>
+                <div class="check-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                        <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                    </svg>
+                </div>
+            </button>
+        </div>
+        </form>
+      </td>
+    </tr>
+  </table>
+  <script type="text/javascript">
+    const btn = document.querySelector("#btn");
+    const btnText = document.querySelector("#btnText");
+
+    btn.onclick = () => {
+        btnText.innerHTML = "Thanks";
+        btn.classList.add("active");
+    };
+</script>
+</html>

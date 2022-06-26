@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Jura&display=swap');
+html {
+  background-color: #262626;
+  font-family: 'Jura';
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+strong {
+  text-shadow: 0px 1px, 1px 0px, 1px 0px;
+}
+
+td, th {
+  width: auto;
+  padding: 8px;
+}
+
+.title {
+  font-size: 40px;
+  text-align: left;
+}
+
+.header {
+  font-size: 40px;
+}
+
+.header-contact {
+  font-size: 40px;
+  border: 1px solid #ffffff;
+}
+
+th:hover {
+  text-decoration: underline;
+}
+
+.empty {
+  height: 5%;
+}
+
+.image {
+  text-align: center;
+  width: 35%;
+}
+
+.social {
+  width: 5%;
+  font-size: 25px;
+  text-align: center;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+.body-description {
+  font-size: 25px;
+  width: auto;
+}
+
+.bottom-title {
+  text-align: center;
+}
+
+hr {
+  border: 1px solid #ffffff;
+  width: 10%;
+}
+
+.bottom-description {
+  text-align: center;
+  font-size: 20px;
+}
+
+.box {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  font-family: 'Jura';
+  color: #ffffff;
+  border: 2px solid #dcdcdc;
+  padding: 10px; 
+  width: 70%;
+  height: auto;  
+  box-shadow: 0px 0px 5px 5px #dcdcdc;
+}
+
+.sub-description {
+  padding: 10px;
+  vertical-align: top;
+}
+
+.bottom {
+  border: 15px solid #3f3f3f;
+  background-color: #3f3f3f;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.sub-description-container {
+  margin: auto;
+}
+
+.copyright {
+  border: 15px solid #3f3f3f;
+  background-color: #3f3f3f;
+}
+
+.notice {
+  text-align: center;
+  font-size: 10px;
+}
+
+.link{
+  display: inline-block;
+  margin-block: 2px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+.link::after{
+  content: '';
+  width: 100%;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
+}
+
+.link:hover::after{
+  transform: scaleX(1);
+}
+
+.link-title{
+  display: inline-block;
+  margin-block: 2px;
+  text-decoration: none;
+  color: #8eb1d9;
+  position: relative;
+}
+
+.link-title::after{
+  content: '';
+  width: 100%;
+  height: 5px;
+  background-color: #8eb1d9;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
+}
+
+.link-title:hover::after{
+  transform: scaleX(1);
+}

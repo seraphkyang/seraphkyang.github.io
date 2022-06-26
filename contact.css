@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Jura&display=swap');
+html {
+  background-color: #262626;
+  font-family: 'Jura';
+  color: #ffffff;
+}
+
+table {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+strong {
+  text-shadow: 0px 1px, 1px 0px, 1px 0px;
+}
+
+td, th {
+  width: auto;
+  padding: 8px;
+}
+
+.title {
+  font-size: 40px;
+  text-align: left;
+}
+
+.header {
+  font-size: 40px;
+}
+
+.header-contact {
+  font-size: 40px;
+  border: 1px solid #8eb1d9;
+}
+
+th:hover {
+  text-decoration: underline;
+}
+
+.unfilled {
+  width: 10%;
+}
+
+label {
+  font-size: 26px;
+}
+
+input[type=text], select, textarea {
+  font-family: 'Jura';
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #5DADE2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  font-family: 'Jura';
+  width: 270px;
+  height: 80px;
+  border: none;
+  outline: none;
+  background: #8eb1d9;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.check-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  box-shadow: 0 0 12px -2px rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  right: -40px;
+  opacity: 0;
+}
+
+.check-box svg {
+  width: 40px;
+  margin: 20px;
+}
+
+svg path {
+  stroke-width: 3;
+  stroke: #fff;
+  stroke-dasharray: 34;
+  stroke-dashoffset: 34;
+  stroke-linecap: round;
+}
+
+.active {
+  background: #8eb1d9;
+  transition: 1s;
+}
+
+.active .check-box {
+  right: 0;
+  opacity: 1;
+  transition: 1s;
+}
+
+.active p {
+  margin-right: 125px;
+  transition: 1s;
+}
+
+.active svg path {
+  stroke-dashoffset: 0;
+  transition: 1s;
+  transition-delay: 1s;
+}
